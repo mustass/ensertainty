@@ -1,0 +1,7 @@
+class_name: optax.warmup_cosine_decay_schedule
+params:
+  init_value: 0.00001
+  peak_value: 0.01
+  warmup_steps: 25
+  decay_steps: null
+  end_value: ${training.lr}

@@ -1,0 +1,4 @@
+class_name: ensertainty.nn.ConvDecoder
+params:
+  latent_features: ${model.latent_dim}
+  channels_multiplier: 10

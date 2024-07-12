@@ -1,0 +1,4 @@
+class_name: ensertainty.training.EnsembleTrainer
+checkpoints: ['/work3/s210527/manifold_flow/models_nondev/CIFAR10_lt100_10dec/cifar10_seed9_10decoder_100dim/']
+checkpoints_models: [model.eqx]
+checkpoints_states: [state.pickle]

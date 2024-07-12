@@ -1,0 +1,10 @@
+dataset_name: MNIST
+batch_size: 130
+num_workers: 8
+data_path: /work3/s210527/manifold_flow/data/
+val_frac: 0.1
+height: 28
+width: 28
+channels: 1
+dim: 784
+classes: [0, 5, 7]

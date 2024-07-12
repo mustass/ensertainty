@@ -1,0 +1,28 @@
+class_name: ensertainty.training.GeodesicsEvalRBF
+seed: 37  # indices of datapoints from test set will be randomly drawn using this seed
+num_points: 50  # number of points to draw from test set
+checkpoints: ['/work3/s210527/ensertainty/models/Ensertainty_rbf_MNIST_3class/mnist_3class_seed13_2dim/'] 
+checkpoints_models: ['model.eqx'] 
+checkpoints_states: ['state.pickle'] 
+plot: true
+geodesics_params:
+  method: 'delta'
+  mode: 'bruteforce'
+  init_mode: 'zeros'
+  init_scale: 1.0
+  batch_size: 1
+  n_steps: 4096
+  n_poly: 10
+  n_t: 256
+  n_t_lengths: 4096
+  lr: 0.01
+  early_stopping_n: 100
+  early_stopping_delta: 1e-4
+  warmup_steps: null
+  optimizer:
+    class_name: optax.adam
+    params:
+      b1: 0.9
+      b2: 0.999
+      eps: 1e-08
+      eps_root: 0.0

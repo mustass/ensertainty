@@ -1,0 +1,10 @@
+class_name: ensertainty.training.EnsembleTrainer
+lr: 0.00005
+max_epochs: 500
+early_stopping_patience: 15
+eval_every: 3
+seed: 3771
+checkpoint: /work3/s210527/ensertainty/models/ens_vae_training/RBF/
+checkpoint_model: 'model.eqx'
+checkpoint_state: 'state.pickle'
+loss_reduction: null

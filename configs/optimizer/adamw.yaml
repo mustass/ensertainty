@@ -1,0 +1,7 @@
+class_name: optax.adamw
+params:
+  b1: 0.9
+  b2: 0.999
+  eps: 1e-08
+  eps_root: 0.0
+  weight_decay: 0.0001

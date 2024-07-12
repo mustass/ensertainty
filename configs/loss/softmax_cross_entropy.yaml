@@ -1,0 +1,1 @@
+class_name: optax.softmax_cross_entropy

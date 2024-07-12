@@ -1,0 +1,11 @@
+class_name: ensertainty.models.EnsembleVAE
+data_dim: ${datamodule.dim}
+latent_dim: 2
+num_decoders: 1
+kl_weight: 0.05
+train_rbf: true
+rbf_k: 10
+rbf_alpha: 1.0
+rbf_epochs: 5
+rbf_lr: 0.001
+rbf_c: 0.1

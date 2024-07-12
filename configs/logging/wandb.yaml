@@ -1,0 +1,5 @@
+params:
+  save_dir: ${general.logs_folder_name}
+  project: ${general.project_name}
+  #api_key: ${private.wandb_api_key}
+  name: ${general.run_name}

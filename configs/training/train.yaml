@@ -1,0 +1,10 @@
+class_name: ensertainty.training.EnsembleTrainer
+lr: 0.00005
+max_epochs: 500
+early_stopping_patience: 15
+eval_every: 3
+seed: 3771
+checkpoint: null
+checkpoint_model: null
+checkpoint_state: null
+loss_reduction: null

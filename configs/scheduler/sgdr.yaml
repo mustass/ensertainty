@@ -1,0 +1,8 @@
+class_name: optax.sgdr_schedule
+params:
+  init_value: 0.0
+  decay_steps: 500
+  exponent: 1.0
+  peak_value: ${training.lr}
+  warmup_steps: 10
+  end_value: 0.0

@@ -1,0 +1,6 @@
+class_name: ensertainty.nn.ConvCelebAEncoder
+params:
+  h: ${datamodule.height}
+  w: ${datamodule.width}
+  channels_in: ${datamodule.channels}
+  out_features: ${model.latent_dim}
