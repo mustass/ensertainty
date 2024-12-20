@@ -1,4 +1,4 @@
-# Official Implementation of Decoder ensembling for learned latent geometries
+# Official Implementation of "Decoder ensembling for learned latent geometries"
 
 This repository contains the official implementation of the paper:  
 **[Decoder ensembling for learned latent geometries](https://arxiv.org/abs/2408.07507)**  
@@ -50,8 +50,11 @@ The geodesics follow the data manifold and avoid the empty space in the middle. 
 
 Examples of the geodesics with uncertainty visualized:
 
+Ensembles:
+
 ![Ensemble Geodesics](results/ensemble_geodesics.png)
 
+RBF:
 ![RBF Geodesics](results/rbf_geodesics.png)
 
 
