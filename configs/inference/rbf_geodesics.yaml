@@ -1,7 +1,7 @@
 class_name: ensertainty.training.GeodesicsEvalRBF
 seed: 37  # indices of datapoints from test set will be randomly drawn using this seed
 num_points: 50  # number of points to draw from test set
-checkpoints: ['/work3/s210527/ensertainty/models/Ensertainty_rbf_MNIST_3class/mnist_3class_seed13_2dim/'] 
+checkpoints: ['/home/stasy/work1/ensertainty/model_checkpoints/ens_vae_training/run/'] 
 checkpoints_models: ['model.eqx'] 
 checkpoints_states: ['state.pickle'] 
 plot: true

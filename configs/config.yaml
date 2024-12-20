@@ -1,6 +1,6 @@
 defaults:
   - _self_
-  - datamodule: mnist
+  - datamodule: mnist_2class
   - logging: wandb
   - loss: l2loss
   - metric: null
@@ -17,7 +17,7 @@ defaults:
 general:
   run_name: run
   logs_folder_name: logs
-  model_checkpoints_path: /work3/s210527/ensertainty/models/${general.project_name}/${general.run_name}/
+  model_checkpoints_path: ./model_checkpoints/${general.project_name}/${general.run_name}/
   workspace: dmiai-mh
   project_name: ens_vae_training
   log_code: False

@@ -126,7 +126,7 @@ def pick_pairs(dataset: Dataset, n_pairs: int, n_diff: int = None, seed: int = N
             _pairs.extend(c)
 
         _pairs = set([tuple(sorted(pair)) for pair in _pairs])
-        _pairs = pyrandom.sample(_pairs, n_diff)
+        _pairs = pyrandom.sample(sorted(_pairs), n_diff)
         point_pairs.extend(_pairs)
 
     return point_pairs

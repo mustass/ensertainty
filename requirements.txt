@@ -7,7 +7,7 @@ pytest
 tree-math
 optax
 matplotlib
-numpy
+numpy==1.26
 jupyter
 gitpython
 opencv-python
@@ -17,3 +17,5 @@ tqdm
 hydra-core
 hydra_colorlog
 omegaconf
+pandas
+equinox

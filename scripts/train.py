@@ -82,7 +82,7 @@ def launch(cfg: DictConfig):
     if cfg.general.log_code:
         save_useful_info(os.path.basename(__file__))
 
-    # cfg.general.model_checkpoints_path = os.path.join(get_original_cwd(), cfg.general.model_checkpoints_path)
+    cfg.general.model_checkpoints_path = os.path.join(get_original_cwd(), cfg.general.model_checkpoints_path)
     pretrained = False
 
     if cfg.training.checkpoint is not None:

@@ -8,7 +8,7 @@ defaults:
 general:
   run_name: RECONSTRUCTIONS
   logs_folder_name: logs
-  model_checkpoints_path: /work3/s210527/ensertainty/experiments/${general.run_name}/
+  model_checkpoints_path: ./experiments/${general.run_name}/
   workspace: dmiai-mh
   project_name: ens_vae_reconstructions
   log_code: False

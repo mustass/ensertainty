@@ -1,14 +1,14 @@
 defaults:
   - _self_
   - logging: wandb
-  - inference: geodesics_mnist
+  - inference: ensemble_geodesics
   - override hydra/hydra_logging: colorlog
   - override hydra/job_logging: colorlog
 
 general:
   run_name: GEODESICS_MNIST
   logs_folder_name: logs
-  model_checkpoints_path: /work3/s210527/ensertainty/geodesics/${general.project_name}/${general.run_name}/
+  model_checkpoints_path: ./geodesics/${general.project_name}/${general.run_name}/
   workspace: dmiai-mh
   project_name: ens_vae_geodesics
   log_code: False
