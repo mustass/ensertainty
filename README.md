@@ -41,11 +41,12 @@ python ./scripts/train.py
 
 ## Results
 The main advantage of using the geodesic distances in a latent space of a generative model is to be able to follow the data manifold, motivated by the manifold hypothesis. In case of data distributed along a circle in 2D, we would like to see something like:
-![Circle](results/learn_a_circle_gplvm.pdf)
+
+![Circle](results/learn_a_circle_gplvm.png)
 
 The geodesics follow the data manifold and avoid the empty space in the middle. However, ensuring that the geodesics follow the data manifold is not trivial as artefacts such as holes are difficult to learn. Following prior work, we use the uncertainty of the decoder to guide the geodesics. This approach is motivated by the fact that uncertainty will be high in areas with no data, hence penalizing the geodesics that go through these areas. In our experiments we compare geodesics computed with uncertainty stemming from the ensemble of decoders with geodesics computed with uncertainty stemming from the RBF kernel. We show that the geodesics computed with the ensemble of decoders is more robust than the geodesics computed with the RBF kernel. The following plot shows the histogram of the coefficient of variation under 30 repetitions of the training procedure for the two methods. 
 
-![Histogram of CV](results/mnist2d_rbf_ensembles.pdf)
+![Histogram of CV](results/mnist2d_rbf_ensembles.png)
 
 Examples of the geodesics with uncertainty visualized:
 
