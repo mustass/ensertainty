@@ -36,7 +36,7 @@ python ./scripts/train.py
 
 To evaluate the model (compute geodesics and create plots), run:
 ```bash
-python ./scripts/train.py
+python ./scripts/inference_geodesics.py
 ```
 
 ## Results
