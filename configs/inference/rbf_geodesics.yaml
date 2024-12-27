@@ -1,9 +1,9 @@
 class_name: ensertainty.training.GeodesicsEvalRBF
 seed: 37  # indices of datapoints from test set will be randomly drawn using this seed
 num_points: 50  # number of points to draw from test set
-checkpoints: ['/home/stasy/work1/ensertainty/model_checkpoints/ens_vae_training/run/'] 
-checkpoints_models: ['model.eqx'] 
-checkpoints_states: ['state.pickle'] 
+checkpoints: ['full_path_to_model_checkpoint_1', 'full_path_to_model_checkpoint_2'] 
+checkpoints_models: ['model.eqx', 'model.eqx'] # model.eqx is the default name of the model checkpoint and the array should contain the same number of elements as the checkpoints array 
+checkpoints_states: ['state.pickle', 'state.pickle'] # state.pickle is the default name of the state checkpoint and the array should contain the same number of elements as the checkpoints array
 plot: true
 geodesics_params:
   method: 'delta'
